@@ -16,45 +16,46 @@ struct TransactionsView: View {
     }
     
     var body: some View {
-        NavigationView {
-            ZStack {
-                if case .loading = transactionInteractor.viewState {
-                    //Display loader
-                }
-                else if case .display = transactionInteractor.viewState {
-                    VStack {
-                        Text("Transactions")
-                            .font(.title)
-                            .fontWeight(.bold)
-                            .foregroundColor(.black)
-                            .padding(.leading, 12)
-                            .frame(maxWidth: .infinity, alignment: .leading)
-                        
-                        List(transactionInteractor.transactionsUIModelList, id: \.id) {
-                            transaction in
-                            HStack {
-                                VStack(alignment: .leading, spacing: 10){
-                                    Text("Title")
-                                    Text("Type")
-                                }
-                                .padding([.top, .bottom], 10)
-                                
-                                Spacer()
-                                
-                                VStack(alignment: .trailing, spacing: 10) {
-                                    Text("Amount")
-                                    Text("Date")
-                                }
-                                .padding([.top, .bottom], 10)
+        ZStack {
+            if case .loading = transactionInteractor.viewState {
+                //Display loader
+            }
+            else if case .display = transactionInteractor.viewState {
+                VStack {
+                    Text("Transactions")
+                        .font(.title)
+                        .fontWeight(.bold)
+                        .foregroundColor(.black)
+                        .padding(.leading, 12)
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                    
+                    List(transactionInteractor.transactionsUIModelList, id: \.id) {
+                        transaction in
+                        HStack {
+                            VStack(alignment: .leading, spacing: 10){
+                                Text(transaction.title)
+                                    .font(Font.body)
+                                    .fontWeight(.semibold)
+                                Text(transaction.type)
+                                    .font(.caption)
                             }
+                            .padding([.top, .bottom], 10)
+                            
+                            Spacer()
+                            
+                            VStack(alignment: .trailing, spacing: 10) {
+                                Text(transaction.amount)
+                                    .font(.body)
+                                    .fontWeight(.semibold)
+                                Text(transaction.date)
+                                    .font(.caption)
+                            }
+                            .padding([.top, .bottom], 10)
                         }
                     }
                 }
             }
-            .navigationBarTitle("")
-            .navigationBarHidden(true)
-        }
-        .onAppear {
+        }.onAppear {
             transactionInteractor.viewDidLoad()
         }
     }

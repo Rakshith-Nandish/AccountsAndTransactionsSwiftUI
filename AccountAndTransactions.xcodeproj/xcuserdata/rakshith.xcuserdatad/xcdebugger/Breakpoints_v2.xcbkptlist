@@ -36,7 +36,7 @@
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "70610B4D-80FA-4C0C-90AD-201E3FDC0258 - 6988286f5efb33d5"
+                  uuid = "70610B4D-80FA-4C0C-90AD-201E3FDC0258 - 6988286f5efb333a"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -46,12 +46,12 @@
                   urlString = "file:///Users/rakshith/Documents/Rakshith/iOS/AccountAndTransactions/AccountAndTransactions/AccountsView/AccountsInteractor.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "41"
-                  endingLineNumber = "41"
-                  offsetFromSymbolStart = "161">
+                  startingLineNumber = "40"
+                  endingLineNumber = "40"
+                  offsetFromSymbolStart = "176">
                </Location>
                <Location
-                  uuid = "70610B4D-80FA-4C0C-90AD-201E3FDC0258 - 6988286f5efb33d5"
+                  uuid = "70610B4D-80FA-4C0C-90AD-201E3FDC0258 - 6988286f5efb333a"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -61,9 +61,9 @@
                   urlString = "file:///Users/rakshith/Documents/Rakshith/iOS/AccountAndTransactions/AccountAndTransactions/AccountsView/AccountsInteractor.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "41"
-                  endingLineNumber = "41"
-                  offsetFromSymbolStart = "290">
+                  startingLineNumber = "40"
+                  endingLineNumber = "40"
+                  offsetFromSymbolStart = "408">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -82,6 +82,83 @@
             endingLineNumber = "42"
             landmarkName = "fetchCustomerDetails()"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "9F2EC7DD-AC68-4F6D-BE8C-9361413228D6 - 6988286f5efb3397"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) await resume partial function for AccountAndTransactions.AccountsInteractor.fetchCustomerDetails() async -&gt; ()"
+                  moduleName = "AccountAndTransactions"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rakshith/Documents/Rakshith/iOS/AccountAndTransactions/AccountAndTransactions/AccountsView/AccountsInteractor.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "43"
+                  endingLineNumber = "43"
+                  offsetFromSymbolStart = "425">
+               </Location>
+               <Location
+                  uuid = "9F2EC7DD-AC68-4F6D-BE8C-9361413228D6 - 6988286f5efb3397"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) await resume partial function for AccountAndTransactions.AccountsInteractor.fetchCustomerDetails() async -&gt; ()"
+                  moduleName = "AccountAndTransactions"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rakshith/Documents/Rakshith/iOS/AccountAndTransactions/AccountAndTransactions/AccountsView/AccountsInteractor.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "43"
+                  endingLineNumber = "43"
+                  offsetFromSymbolStart = "496">
+               </Location>
+               <Location
+                  uuid = "9F2EC7DD-AC68-4F6D-BE8C-9361413228D6 - e2ad68d8912041ec"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for AccountAndTransactions.AccountsInteractor.fetchCustomerDetails() async -&gt; ()"
+                  moduleName = "AccountAndTransactions"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rakshith/Documents/Rakshith/iOS/AccountAndTransactions/AccountAndTransactions/AccountsView/AccountsInteractor.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "43"
+                  endingLineNumber = "43"
+                  offsetFromSymbolStart = "21">
+               </Location>
+               <Location
+                  uuid = "9F2EC7DD-AC68-4F6D-BE8C-9361413228D6 - e2ad68d8912041ec"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for AccountAndTransactions.AccountsInteractor.fetchCustomerDetails() async -&gt; ()"
+                  moduleName = "AccountAndTransactions"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rakshith/Documents/Rakshith/iOS/AccountAndTransactions/AccountAndTransactions/AccountsView/AccountsInteractor.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "43"
+                  endingLineNumber = "43"
+                  offsetFromSymbolStart = "39">
+               </Location>
+               <Location
+                  uuid = "9F2EC7DD-AC68-4F6D-BE8C-9361413228D6 - edecd9800c03a3ef"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(5) suspend resume partial function for AccountAndTransactions.AccountsInteractor.fetchCustomerDetails() async -&gt; ()"
+                  moduleName = "AccountAndTransactions"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rakshith/Documents/Rakshith/iOS/AccountAndTransactions/AccountAndTransactions/AccountsView/AccountsInteractor.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "43"
+                  endingLineNumber = "43"
+                  offsetFromSymbolStart = "54">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy

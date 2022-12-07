@@ -13,5 +13,6 @@ struct AccountDetailDataModel: Codable {
     let sortingOrder: Int
     let uniqueID: String
     let transactions: [TransactionDetailDataModel]
+    //MARK: can be made optional
     let cards: [CardsDataModel]
 }

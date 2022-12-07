@@ -11,6 +11,10 @@ protocol CustomerInformationServicable {
     func getCustomerInformation() async -> Result<CustomerDataModel, RequestError>
 }
 
+protocol TransactionsInformationServicable {
+    func getTransactionDetailsForAccount(id: String) async -> Result<[TransactionDetailDataModel], RequestError>
+}
+
 class CustomerInformationService: CustomerInformationServicable {
     let customerDataRepository: CustomerDataRepository = CustomerDataRepositoryImplementation()
     
@@ -20,3 +24,11 @@ class CustomerInformationService: CustomerInformationServicable {
     }
 }
 
+class TransactionInformationService: TransactionsInformationServicable {
+    let customerDataRepository: CustomerDataRepository = CustomerDataRepositoryImplementation()
+    
+    func getTransactionDetailsForAccount(id: String) async -> Result<[TransactionDetailDataModel], RequestError> {
+        let result = await customerDataRepository.getTransactionsInformation(accountId: id)
+        return result
+    }
+}

@@ -9,7 +9,7 @@ import Foundation
 import SwiftUI
 
 enum NavigationRoute {
-    case transactions
+    case transactions(accountUniqueId: String)
 }
 
 struct Navigator {

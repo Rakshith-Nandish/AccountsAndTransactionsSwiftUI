@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum AccountsViewState {
+enum AccountsViewState: Equatable {
     case begin
     case loading
     case display
@@ -49,6 +49,7 @@ class AccountsInteractor: ObservableObject {
         print(customerInfoModel)
         let accountsUIModelList = customerInfoModel.accounts.map {
             AccountsUIModel(id: $0.sortingOrder,
+                            uniqueID: $0.uniqueID,
                             accountName: $0.accountName,
                             numberOfCards: $0.cards.count)
         }

@@ -15,6 +15,7 @@ struct CustomerInfoUIModel {
 
 struct AccountsUIModel {
     let id: Int
+    let uniqueID: String
     let accountName: String
     let numberOfCards: Int
 }

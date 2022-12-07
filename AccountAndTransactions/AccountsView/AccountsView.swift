@@ -20,26 +20,38 @@ struct AccountsView: View {
     
     var body: some View {
         
-        GeometryReader { proxy in
-            if case .loading = accountsInteractor.viewState {
-                getLoader()
-            }
-            else if case .display = accountsInteractor.viewState {
-                ZStack {
-                    VStack {
-                         
-                        getHeader(size: proxy.size)
-                        
-                        Text("Accounts")
-                            .font(.title)
-                            .fontWeight(.bold)
-                            .foregroundColor(.black)
-                            .padding(.leading, 12)
-                            .frame(maxWidth: .infinity, alignment: .leading)
-                        Spacer()
+        NavigationView {
+            GeometryReader { proxy in
+                if case .loading = accountsInteractor.viewState {
+                    getLoader()
+                }
+                else if case .display = accountsInteractor.viewState {
+                    ZStack {
+                        VStack {
+                             
+                            getHeader(size: proxy.size)
+                            
+                            Text("Accounts")
+                                .font(.title)
+                                .fontWeight(.bold)
+                                .foregroundColor(.black)
+                                .padding(.leading, 12)
+                                .frame(maxWidth: .infinity, alignment: .leading)
+                            
+                            List(accountsInteractor.customerInfoUIModel.accounts, id: \.id) {
+                                account in
+                                Text(account.accountName)
+                                    .font(.title3)
+                                    .fontWeight(.regular)
+                                    .foregroundColor(.black)
+                                    .frame(height: 60, alignment: .leading)
+                            }.onAppear(perform: {
+                                UITableView.appearance().contentInset.top = -20
+                            })
+                        }
                     }
                 }
-            }
+            }.navigationBarHidden(true)
         }
         .onAppear {
             accountsInteractor.viewDidLoad()
@@ -61,7 +73,7 @@ struct AccountsView: View {
                 .padding()
                 .frame(maxWidth: .infinity, alignment: .bottomLeading)
         }
-        .frame(maxWidth: .infinity, maxHeight: size.height * 0.25)
+        .frame(maxWidth: .infinity, maxHeight: size.height * 0.21)
         .background {
             LinearGradient(gradient:
                             Gradient(colors: [backgroundOne, backgroundTwo]),

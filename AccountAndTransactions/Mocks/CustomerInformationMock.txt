@@ -1,0 +1,78 @@
+{
+    "accounts": [
+        {
+            "accountName": "Current Account",
+            "sortingOrder": 1,
+            "currency": "£",
+            "conversionRate": "0",
+            "cards": [
+                {
+                    "applePayEligible": true,
+                    "cardToken": "c1dedb9541370565653ee34a9e9e0de863492bc524ffa323d3bbbf045e8e9840"
+                },
+                {
+                    "applePayEligible": true,
+                    "cardToken": "ad5b84d978bc563f459f713b0bbe9adf782063eb11559dc306e641890dbe066a"
+                }
+            ],
+            "transactions": [
+                {
+                    "date": "12/01/2022",
+                    "inAmount": "0.00",
+                    "outAmount": "3.49",
+                    "transactionCardToken": "ad5b84d978bc563f459f713b0bbe9adf782063eb11559dc306e641890dbe066a",
+                    "paymentType": "Debit",
+                    "title": "Starbucks",
+                    "uniqueID": "a07c263c1a21c3e1"
+                },
+                {
+                    "date": "12/01/2022",
+                    "inAmount": "0.00",
+                    "outAmount": "6.49",
+                    "transactionCardToken": "ad5b84d978bc563f459f713b0bbe9adf782063eb11559dc306e641890dbe066a",
+                    "paymentType": "Debit",
+                    "title": "McDonalds",
+                    "uniqueID": "4f076202b35e65e0"
+                },
+                {
+                    "date": "13/01/2022",
+                    "inAmount": "0.00",
+                    "outAmount": "39.26",
+                    "transactionCardToken": "c1dedb9541370565653ee34a9e9e0de863492bc524ffa323d3bbbf045e8e9840",
+                    "paymentType": "Debit",
+                    "reference": "Next Homeware Handforth",
+                    "title": "Next",
+                    "uniqueID": "57f5e2f0e72d714c"
+                },
+                {
+                    "date": "13/01/2022",
+                    "inAmount": "0.00",
+                    "outAmount": "149.00",
+                    "transactionCardToken": "ad5b84d978bc563f459f713b0bbe9adf782063eb11559dc306e641890dbe066a",
+                    "paymentType": "Direct Debit",
+                    "title": "Manchester Council",
+                    "uniqueID": "ee408dea45ce0e86"
+                },
+                {
+                    "date": "13/01/2022",
+                    "inAmount": "29.99",
+                    "outAmount": "0.00",
+                    "transactionCardToken": "c1dedb9541370565653ee34a9e9e0de863492bc524ffa323d3bbbf045e8e9840",
+                    "paymentType": "Credit",
+                    "title": "ASOS",
+                    "uniqueID": "440cc12cf2c2a0c2"
+                }
+            ],
+            "uniqueID": "75f1f7c299b630e8"
+        }
+    ],
+    "customerNameDetails": {
+        "forename": "James",
+        "middleName": "",
+        "surname": "Bond",
+        "title": "Mr"
+    },
+    "dateOfBirth": "09/07/1956",
+    "occupation": "Agent"
+}
+

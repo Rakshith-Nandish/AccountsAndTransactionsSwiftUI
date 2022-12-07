@@ -38,13 +38,17 @@ struct AccountsView: View {
                                 .padding(.leading, 12)
                                 .frame(maxWidth: .infinity, alignment: .leading)
                             
+                            
                             List(accountsInteractor.customerInfoUIModel.accounts, id: \.id) {
                                 account in
-                                Text(account.accountName)
-                                    .font(.title3)
-                                    .fontWeight(.regular)
-                                    .foregroundColor(.black)
-                                    .frame(height: 60, alignment: .leading)
+                                Navigator.navigate(
+                                    route: .transactions(accountUniqueId: account.uniqueID)) {
+                                        Text(account.accountName)
+                                            .font(.title3)
+                                            .fontWeight(.regular)
+                                            .foregroundColor(.black)
+                                            .frame(height: 60, alignment: .leading)
+                                }
                             }.onAppear(perform: {
                                 UITableView.appearance().contentInset.top = -20
                             })

@@ -13,4 +13,5 @@ struct TransactionDetailDataModel: Codable {
     let outAmount: String
     let paymentType: String
     let title: String
+    let uniqueID: String
 }

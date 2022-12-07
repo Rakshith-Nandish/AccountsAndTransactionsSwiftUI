@@ -13,4 +13,5 @@ struct AccountDetailDataModel: Codable {
     let sortingOrder: Int
     let uniqueID: String
     let transactions: [TransactionDetailDataModel]
+    let cards: [CardsDataModel]
 }

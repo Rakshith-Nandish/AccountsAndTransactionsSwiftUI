@@ -9,27 +9,35 @@ import SwiftUI
 
 struct AccountsView: View {
     
-    private var accountsInteractor: AccountsInteractor
+    let backgroundOne = Color(red: 46/255, green: 19/255, blue: 113/255)
+    let backgroundTwo = Color(red: 19/255, green: 11/255, blue: 43/255)
+    
+    @ObservedObject var accountsInteractor: AccountsInteractor
     
     init(accountsInteractor: AccountsInteractor) {
         self.accountsInteractor =  accountsInteractor
     }
     
     var body: some View {
-        ZStack {
-            VStack {
-                VStack {
-                    Text("Welcome Customer Name!")
-                        .font(.title2)
-                        .fontWeight(.bold)
-                        .foregroundColor(.white)
-                        .padding()
-                    
-                    Text("Date Of Birth")
-                        .font(.body)
-                        .fontWeight(.medium)
-                        .foregroundColor(.white)
-                        .padding()
+        
+        GeometryReader { proxy in
+            if case .loading = accountsInteractor.viewState {
+                getLoader()
+            }
+            else if case .display = accountsInteractor.viewState {
+                ZStack {
+                    VStack {
+                         
+                        getHeader(size: proxy.size)
+                        
+                        Text("Accounts")
+                            .font(.title)
+                            .fontWeight(.bold)
+                            .foregroundColor(.black)
+                            .padding(.leading, 12)
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                        Spacer()
+                    }
                 }
             }
         }
@@ -37,11 +45,41 @@ struct AccountsView: View {
             accountsInteractor.viewDidLoad()
         }
     }
-}
-
-struct AccountsView_Previews: PreviewProvider {
-    static var previews: some View {
-        AccountsView(accountsInteractor: AccountsInteractor(
-            customerInfoServicable: CustomerInformationService()))
+    
+    private func getHeader(size: CGSize) -> some View {
+        VStack {
+            Text(accountsInteractor.customerInfoUIModel.customerName)
+                .font(.title2)
+                .fontWeight(.bold)
+                .foregroundColor(.white)
+                .padding()
+            
+            Text("Number of accounts: 3")
+                .font(.caption)
+                .fontWeight(.regular)
+                .foregroundColor(.white)
+                .padding()
+                .frame(maxWidth: .infinity, alignment: .bottomLeading)
+        }
+        .frame(maxWidth: .infinity, maxHeight: size.height * 0.25)
+        .background {
+            LinearGradient(gradient:
+                            Gradient(colors: [backgroundOne, backgroundTwo]),
+                           startPoint: .top,
+                           endPoint: .bottom)
+        }
     }
+    
+    private func getLoader() -> some View {
+        ProgressView()
+            .scaleEffect(1, anchor: .center)
+            .progressViewStyle(CircularProgressViewStyle(tint: .gray))
+    }
+}
+    
+struct AccountsView_Previews: PreviewProvider {
+        static var previews: some View {
+            AccountsView(accountsInteractor: AccountsInteractor(
+                customerInfoServicable: CustomerInformationService()))
+        }
 }

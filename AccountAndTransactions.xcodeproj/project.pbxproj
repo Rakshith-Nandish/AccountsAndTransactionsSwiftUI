@@ -25,6 +25,8 @@
 		AC646B87293FBF9F0036EBA0 /* RequestError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC646B86293FBF9F0036EBA0 /* RequestError.swift */; };
 		AC646B89293FC0DD0036EBA0 /* CustomerDataRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC646B88293FC0DD0036EBA0 /* CustomerDataRepository.swift */; };
 		AC646B8B2940853F0036EBA0 /* AccountsViewConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC646B8A2940853F0036EBA0 /* AccountsViewConfigurator.swift */; };
+		AC646B8D2940A3A70036EBA0 /* CustomerInfoUIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC646B8C2940A3A70036EBA0 /* CustomerInfoUIModel.swift */; };
+		AC646B8F2940A5B30036EBA0 /* CardsDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC646B8E2940A5B30036EBA0 /* CardsDataModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +49,8 @@
 		AC646B86293FBF9F0036EBA0 /* RequestError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestError.swift; sourceTree = "<group>"; };
 		AC646B88293FC0DD0036EBA0 /* CustomerDataRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerDataRepository.swift; sourceTree = "<group>"; };
 		AC646B8A2940853F0036EBA0 /* AccountsViewConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsViewConfigurator.swift; sourceTree = "<group>"; };
+		AC646B8C2940A3A70036EBA0 /* CustomerInfoUIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerInfoUIModel.swift; sourceTree = "<group>"; };
+		AC646B8E2940A5B30036EBA0 /* CardsDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsDataModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +121,7 @@
 				AC646B72293FB5EA0036EBA0 /* AccountsView.swift */,
 				AC646B74293FB6020036EBA0 /* AccountsInteractor.swift */,
 				AC646B8A2940853F0036EBA0 /* AccountsViewConfigurator.swift */,
+				AC646B8C2940A3A70036EBA0 /* CustomerInfoUIModel.swift */,
 			);
 			path = AccountsView;
 			sourceTree = "<group>";
@@ -143,6 +148,7 @@
 				AC646B7D293FB8200036EBA0 /* CustomerDataModel.swift */,
 				AC646B7F293FB9E20036EBA0 /* AccountDetailDataModel.swift */,
 				AC646B81293FBB370036EBA0 /* TransacationDetailDataModel.swift */,
+				AC646B8E2940A5B30036EBA0 /* CardsDataModel.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -236,7 +242,9 @@
 				AC646B5F293FB27C0036EBA0 /* ContentView.swift in Sources */,
 				AC646B89293FC0DD0036EBA0 /* CustomerDataRepository.swift in Sources */,
 				AC646B77293FB6130036EBA0 /* Navigation.swift in Sources */,
+				AC646B8F2940A5B30036EBA0 /* CardsDataModel.swift in Sources */,
 				AC646B82293FBB370036EBA0 /* TransacationDetailDataModel.swift in Sources */,
+				AC646B8D2940A3A70036EBA0 /* CustomerInfoUIModel.swift in Sources */,
 				AC646B5D293FB27C0036EBA0 /* AccountAndTransactionsApp.swift in Sources */,
 				AC646B87293FBF9F0036EBA0 /* RequestError.swift in Sources */,
 				AC646B6F293FB2AD0036EBA0 /* Accounts.swift in Sources */,

@@ -17,6 +17,8 @@ enum AccountsViewState {
 class AccountsInteractor: ObservableObject {
     
     @Published var viewState: AccountsViewState = .begin
+    //modify this
+    @Published var customerInfoUIModel: CustomerInfoUIModel!
     
     var getCustomerInfoServicable: CustomerInformationServicable
     
@@ -25,26 +27,45 @@ class AccountsInteractor: ObservableObject {
     }
     
     func viewDidLoad() {
-        viewState = .begin
+        viewState = .loading
         Task {
             await fetchCustomerDetails()
         }
     }
     
     func fetchCustomerDetails() async {
-        viewState = .loading
         let result = await getCustomerInfoServicable.getCustomerInformation()
         
         switch result {
         case .success(let model):
-            configureCustomerInfoPresentationModel(customerInfoModel: model)
+            await configureCustomerInfoPresentationModel(customerInfoModel: model)
         case .failure(let error):
-            viewState = .error(error: error.customMessage)
+            await configureErrorState(error: error)
         }
     }
     
+    @MainActor
     func configureCustomerInfoPresentationModel(customerInfoModel: CustomerDataModel) {
-        viewState = .display
         print(customerInfoModel)
+        let accountsUIModelList = customerInfoModel.accounts.map {
+            AccountsUIModel(id: $0.sortingOrder,
+                            accountName: $0.accountName,
+                            numberOfCards: $0.cards.count)
+        }
+        let customerWelcomeText = "Welcome " + customerInfoModel.customerNameDetails.forename + " " +
+        customerInfoModel.customerNameDetails.surname
+        
+        let numberOfAccountsText = "Number of Accounts: " + String(accountsUIModelList.count)
+        
+        customerInfoUIModel = CustomerInfoUIModel(
+            customerName: customerWelcomeText,
+            numberOfAccounts: numberOfAccountsText,
+            accounts: accountsUIModelList)
+        viewState = .display
+    }
+    
+    @MainActor
+    func configureErrorState(error: RequestError) {
+        viewState = .error(error: error.customMessage)
     }
 }

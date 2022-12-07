@@ -11,6 +11,20 @@
 		AC646B5F293FB27C0036EBA0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC646B5E293FB27C0036EBA0 /* ContentView.swift */; };
 		AC646B61293FB2810036EBA0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC646B60293FB2810036EBA0 /* Assets.xcassets */; };
 		AC646B64293FB2810036EBA0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC646B63293FB2810036EBA0 /* Preview Assets.xcassets */; };
+		AC646B6E293FB2AD0036EBA0 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = AC646B6B293FB2AC0036EBA0 /* README.md */; };
+		AC646B6F293FB2AD0036EBA0 /* Accounts.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC646B6C293FB2AD0036EBA0 /* Accounts.swift */; };
+		AC646B70293FB2AD0036EBA0 /* Accounts.txt in Resources */ = {isa = PBXBuildFile; fileRef = AC646B6D293FB2AD0036EBA0 /* Accounts.txt */; };
+		AC646B73293FB5EA0036EBA0 /* AccountsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC646B72293FB5EA0036EBA0 /* AccountsView.swift */; };
+		AC646B75293FB6020036EBA0 /* AccountsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC646B74293FB6020036EBA0 /* AccountsInteractor.swift */; };
+		AC646B77293FB6130036EBA0 /* Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC646B76293FB6130036EBA0 /* Navigation.swift */; };
+		AC646B7B293FB6F50036EBA0 /* TransactionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC646B7A293FB6F50036EBA0 /* TransactionsView.swift */; };
+		AC646B7E293FB8200036EBA0 /* CustomerDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC646B7D293FB8200036EBA0 /* CustomerDataModel.swift */; };
+		AC646B80293FB9E20036EBA0 /* AccountDetailDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC646B7F293FB9E20036EBA0 /* AccountDetailDataModel.swift */; };
+		AC646B82293FBB370036EBA0 /* TransacationDetailDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC646B81293FBB370036EBA0 /* TransacationDetailDataModel.swift */; };
+		AC646B85293FBEEE0036EBA0 /* Services.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC646B84293FBEEE0036EBA0 /* Services.swift */; };
+		AC646B87293FBF9F0036EBA0 /* RequestError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC646B86293FBF9F0036EBA0 /* RequestError.swift */; };
+		AC646B89293FC0DD0036EBA0 /* CustomerDataRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC646B88293FC0DD0036EBA0 /* CustomerDataRepository.swift */; };
+		AC646B8B2940853F0036EBA0 /* AccountsViewConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC646B8A2940853F0036EBA0 /* AccountsViewConfigurator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +33,20 @@
 		AC646B5E293FB27C0036EBA0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		AC646B60293FB2810036EBA0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC646B63293FB2810036EBA0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AC646B6B293FB2AC0036EBA0 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		AC646B6C293FB2AD0036EBA0 /* Accounts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Accounts.swift; sourceTree = "<group>"; };
+		AC646B6D293FB2AD0036EBA0 /* Accounts.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Accounts.txt; sourceTree = "<group>"; };
+		AC646B72293FB5EA0036EBA0 /* AccountsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsView.swift; sourceTree = "<group>"; };
+		AC646B74293FB6020036EBA0 /* AccountsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsInteractor.swift; sourceTree = "<group>"; };
+		AC646B76293FB6130036EBA0 /* Navigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigation.swift; sourceTree = "<group>"; };
+		AC646B7A293FB6F50036EBA0 /* TransactionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsView.swift; sourceTree = "<group>"; };
+		AC646B7D293FB8200036EBA0 /* CustomerDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerDataModel.swift; sourceTree = "<group>"; };
+		AC646B7F293FB9E20036EBA0 /* AccountDetailDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountDetailDataModel.swift; sourceTree = "<group>"; };
+		AC646B81293FBB370036EBA0 /* TransacationDetailDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransacationDetailDataModel.swift; sourceTree = "<group>"; };
+		AC646B84293FBEEE0036EBA0 /* Services.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services.swift; sourceTree = "<group>"; };
+		AC646B86293FBF9F0036EBA0 /* RequestError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestError.swift; sourceTree = "<group>"; };
+		AC646B88293FC0DD0036EBA0 /* CustomerDataRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerDataRepository.swift; sourceTree = "<group>"; };
+		AC646B8A2940853F0036EBA0 /* AccountsViewConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsViewConfigurator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +63,7 @@
 		AC646B50293FB27C0036EBA0 = {
 			isa = PBXGroup;
 			children = (
+				AC646B6A293FB2940036EBA0 /* Template */,
 				AC646B5B293FB27C0036EBA0 /* AccountAndTransactions */,
 				AC646B5A293FB27C0036EBA0 /* Products */,
 			);
@@ -51,6 +80,11 @@
 		AC646B5B293FB27C0036EBA0 /* AccountAndTransactions */ = {
 			isa = PBXGroup;
 			children = (
+				AC646B83293FBEDB0036EBA0 /* Networking */,
+				AC646B7C293FB7C40036EBA0 /* Data */,
+				AC646B79293FB6DC0036EBA0 /* Transactions */,
+				AC646B78293FB62F0036EBA0 /* Navigation */,
+				AC646B71293FB5D50036EBA0 /* AccountsView */,
 				AC646B5C293FB27C0036EBA0 /* AccountAndTransactionsApp.swift */,
 				AC646B5E293FB27C0036EBA0 /* ContentView.swift */,
 				AC646B60293FB2810036EBA0 /* Assets.xcassets */,
@@ -65,6 +99,62 @@
 				AC646B63293FB2810036EBA0 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		AC646B6A293FB2940036EBA0 /* Template */ = {
+			isa = PBXGroup;
+			children = (
+				AC646B6C293FB2AD0036EBA0 /* Accounts.swift */,
+				AC646B6D293FB2AD0036EBA0 /* Accounts.txt */,
+				AC646B6B293FB2AC0036EBA0 /* README.md */,
+			);
+			path = Template;
+			sourceTree = "<group>";
+		};
+		AC646B71293FB5D50036EBA0 /* AccountsView */ = {
+			isa = PBXGroup;
+			children = (
+				AC646B72293FB5EA0036EBA0 /* AccountsView.swift */,
+				AC646B74293FB6020036EBA0 /* AccountsInteractor.swift */,
+				AC646B8A2940853F0036EBA0 /* AccountsViewConfigurator.swift */,
+			);
+			path = AccountsView;
+			sourceTree = "<group>";
+		};
+		AC646B78293FB62F0036EBA0 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				AC646B76293FB6130036EBA0 /* Navigation.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		AC646B79293FB6DC0036EBA0 /* Transactions */ = {
+			isa = PBXGroup;
+			children = (
+				AC646B7A293FB6F50036EBA0 /* TransactionsView.swift */,
+			);
+			path = Transactions;
+			sourceTree = "<group>";
+		};
+		AC646B7C293FB7C40036EBA0 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				AC646B7D293FB8200036EBA0 /* CustomerDataModel.swift */,
+				AC646B7F293FB9E20036EBA0 /* AccountDetailDataModel.swift */,
+				AC646B81293FBB370036EBA0 /* TransacationDetailDataModel.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		AC646B83293FBEDB0036EBA0 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				AC646B84293FBEEE0036EBA0 /* Services.swift */,
+				AC646B86293FBF9F0036EBA0 /* RequestError.swift */,
+				AC646B88293FC0DD0036EBA0 /* CustomerDataRepository.swift */,
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,7 +215,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC646B6E293FB2AD0036EBA0 /* README.md in Resources */,
 				AC646B64293FB2810036EBA0 /* Preview Assets.xcassets in Resources */,
+				AC646B70293FB2AD0036EBA0 /* Accounts.txt in Resources */,
 				AC646B61293FB2810036EBA0 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,8 +229,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC646B75293FB6020036EBA0 /* AccountsInteractor.swift in Sources */,
+				AC646B80293FB9E20036EBA0 /* AccountDetailDataModel.swift in Sources */,
+				AC646B73293FB5EA0036EBA0 /* AccountsView.swift in Sources */,
+				AC646B85293FBEEE0036EBA0 /* Services.swift in Sources */,
 				AC646B5F293FB27C0036EBA0 /* ContentView.swift in Sources */,
+				AC646B89293FC0DD0036EBA0 /* CustomerDataRepository.swift in Sources */,
+				AC646B77293FB6130036EBA0 /* Navigation.swift in Sources */,
+				AC646B82293FBB370036EBA0 /* TransacationDetailDataModel.swift in Sources */,
 				AC646B5D293FB27C0036EBA0 /* AccountAndTransactionsApp.swift in Sources */,
+				AC646B87293FBF9F0036EBA0 /* RequestError.swift in Sources */,
+				AC646B6F293FB2AD0036EBA0 /* Accounts.swift in Sources */,
+				AC646B8B2940853F0036EBA0 /* AccountsViewConfigurator.swift in Sources */,
+				AC646B7B293FB6F50036EBA0 /* TransactionsView.swift in Sources */,
+				AC646B7E293FB8200036EBA0 /* CustomerDataModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,7 +380,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -305,7 +409,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

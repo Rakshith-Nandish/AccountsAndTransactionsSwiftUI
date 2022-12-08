@@ -7,6 +7,8 @@
 
 import Foundation
 
+//Exposes the services of the Repository.
+// The low level implementation can be changed if needed and it wont affect the UI
 protocol CustomerDataRepository {
     func getCustomerInformation() async -> Result<CustomerDataModel, RequestError>
     func getTransactionsInformation(accountId: String) async -> Result<[TransactionDetailDataModel], RequestError>
@@ -28,7 +30,6 @@ class CustomerDataRepositoryImplementation: CustomerDataRepository {
             }
         } catch {
             return .failure(RequestError.decode)
-            //fatalError("Failed to decode loaded JSON")
         }
         return .failure(RequestError.unknown)
     }

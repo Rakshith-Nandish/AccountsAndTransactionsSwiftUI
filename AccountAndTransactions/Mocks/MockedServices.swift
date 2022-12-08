@@ -23,3 +23,5 @@ final class MockedCustomerInformationServiceFailable: CustomerInformationServica
         return .failure(.decode)
     }
 }
+
+//This can be done similarly for the TransactionInformationServices

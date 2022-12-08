@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct TransactionsUIModel {
+struct TransactionsViewModel {
     let id: String
     let title: String
     let amount: String

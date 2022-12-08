@@ -7,13 +7,13 @@
 
 import Foundation
 
-struct CustomerInfoUIModel {
+struct CustomerInfoViewModel {
     let customerName: String
     let numberOfAccounts: String
-    let accounts: [AccountsUIModel]
+    let accounts: [AccountsViewModel]
 }
 
-struct AccountsUIModel {
+struct AccountsViewModel {
     let id: Int
     let uniqueID: String
     let accountName: String

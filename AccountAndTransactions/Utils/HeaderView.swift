@@ -8,6 +8,7 @@
 import Foundation
 import SwiftUI
 
+//Modifier for the list/ section headers
 struct HeaderView: ViewModifier {
     func body(content: Content) -> some View {
         content

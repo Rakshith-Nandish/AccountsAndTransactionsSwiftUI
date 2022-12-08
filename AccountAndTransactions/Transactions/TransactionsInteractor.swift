@@ -21,7 +21,7 @@ class TransactionInteractor: ObservableObject {
     
     @Published var viewState: TransactionsState = .begin
     
-    var transactionsUIModelList: [TransactionsUIModel] = []
+    var transactionsViewModelList: [TransactionsViewModel] = []
     
     init(transactionInfoServicable: TransactionsInformationServicable,
          accountId: String) {
@@ -38,7 +38,6 @@ class TransactionInteractor: ObservableObject {
     
     func fetchTransactionsInformation() async {
         guard !accountId.isEmpty else {
-            //error
             await configureErrorForTransactionFetch(error: .unauthorized)
             return
         }
@@ -55,9 +54,9 @@ class TransactionInteractor: ObservableObject {
     @MainActor
     func configureTransactionUIModel(transactions: [TransactionDetailDataModel]) {
         print(transactions)
-        transactionsUIModelList = transactions.map {
+        transactionsViewModelList = transactions.map {
             
-            TransactionsUIModel(id: $0.uniqueID,
+            TransactionsViewModel(id: $0.uniqueID,
                                 title: $0.title,
                                 amount: $0.inAmount,
                                 type: $0.paymentType,

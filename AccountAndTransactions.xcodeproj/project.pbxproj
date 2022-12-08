@@ -25,16 +25,18 @@
 		AC646B87293FBF9F0036EBA0 /* RequestError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC646B86293FBF9F0036EBA0 /* RequestError.swift */; };
 		AC646B89293FC0DD0036EBA0 /* CustomerDataRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC646B88293FC0DD0036EBA0 /* CustomerDataRepository.swift */; };
 		AC646B8B2940853F0036EBA0 /* AccountsViewConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC646B8A2940853F0036EBA0 /* AccountsViewConfigurator.swift */; };
-		AC646B8D2940A3A70036EBA0 /* CustomerInfoUIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC646B8C2940A3A70036EBA0 /* CustomerInfoUIModel.swift */; };
+		AC646B8D2940A3A70036EBA0 /* CustomerInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC646B8C2940A3A70036EBA0 /* CustomerInfoViewModel.swift */; };
 		AC646B8F2940A5B30036EBA0 /* CardsDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC646B8E2940A5B30036EBA0 /* CardsDataModel.swift */; };
 		AC646B922940B5800036EBA0 /* Mockable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC646B912940B5800036EBA0 /* Mockable.swift */; };
 		AC646B942940B59C0036EBA0 /* MockedServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC646B932940B59C0036EBA0 /* MockedServices.swift */; };
 		AC646B962940B7530036EBA0 /* CustomerInformationMock.txt in Resources */ = {isa = PBXBuildFile; fileRef = AC646B952940B7530036EBA0 /* CustomerInformationMock.txt */; };
 		AC646BA52940B7DE0036EBA0 /* AccountsInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC646BA42940B7DE0036EBA0 /* AccountsInteractorTests.swift */; };
 		AC646BA72940C3F80036EBA0 /* TransactionsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC646BA62940C3F80036EBA0 /* TransactionsInteractor.swift */; };
-		AC646BA9294103D60036EBA0 /* TransactionsUIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC646BA8294103D60036EBA0 /* TransactionsUIModel.swift */; };
+		AC646BA9294103D60036EBA0 /* TransactionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC646BA8294103D60036EBA0 /* TransactionsViewModel.swift */; };
 		AC646BAC29414BAC0036EBA0 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC646BAB29414BAC0036EBA0 /* HeaderView.swift */; };
 		AC646BAE2941DA790036EBA0 /* LoadingIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC646BAD2941DA790036EBA0 /* LoadingIndicator.swift */; };
+		AC646BB029420F320036EBA0 /* TransactionsViewConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC646BAF29420F320036EBA0 /* TransactionsViewConfigurator.swift */; };
+		AC646BB329422DCD0036EBA0 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC646BB229422DCD0036EBA0 /* ErrorView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,7 +69,7 @@
 		AC646B86293FBF9F0036EBA0 /* RequestError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestError.swift; sourceTree = "<group>"; };
 		AC646B88293FC0DD0036EBA0 /* CustomerDataRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerDataRepository.swift; sourceTree = "<group>"; };
 		AC646B8A2940853F0036EBA0 /* AccountsViewConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsViewConfigurator.swift; sourceTree = "<group>"; };
-		AC646B8C2940A3A70036EBA0 /* CustomerInfoUIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerInfoUIModel.swift; sourceTree = "<group>"; };
+		AC646B8C2940A3A70036EBA0 /* CustomerInfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerInfoViewModel.swift; sourceTree = "<group>"; };
 		AC646B8E2940A5B30036EBA0 /* CardsDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsDataModel.swift; sourceTree = "<group>"; };
 		AC646B912940B5800036EBA0 /* Mockable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mockable.swift; sourceTree = "<group>"; };
 		AC646B932940B59C0036EBA0 /* MockedServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockedServices.swift; sourceTree = "<group>"; };
@@ -75,9 +77,11 @@
 		AC646B9B2940B7A00036EBA0 /* AccountAndTransactionsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AccountAndTransactionsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC646BA42940B7DE0036EBA0 /* AccountsInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsInteractorTests.swift; sourceTree = "<group>"; };
 		AC646BA62940C3F80036EBA0 /* TransactionsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsInteractor.swift; sourceTree = "<group>"; };
-		AC646BA8294103D60036EBA0 /* TransactionsUIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsUIModel.swift; sourceTree = "<group>"; };
+		AC646BA8294103D60036EBA0 /* TransactionsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsViewModel.swift; sourceTree = "<group>"; };
 		AC646BAB29414BAC0036EBA0 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		AC646BAD2941DA790036EBA0 /* LoadingIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingIndicator.swift; sourceTree = "<group>"; };
+		AC646BAF29420F320036EBA0 /* TransactionsViewConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsViewConfigurator.swift; sourceTree = "<group>"; };
+		AC646BB229422DCD0036EBA0 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,7 +163,7 @@
 				AC646B72293FB5EA0036EBA0 /* AccountsView.swift */,
 				AC646B74293FB6020036EBA0 /* AccountsInteractor.swift */,
 				AC646B8A2940853F0036EBA0 /* AccountsViewConfigurator.swift */,
-				AC646B8C2940A3A70036EBA0 /* CustomerInfoUIModel.swift */,
+				AC646B8C2940A3A70036EBA0 /* CustomerInfoViewModel.swift */,
 			);
 			path = AccountsView;
 			sourceTree = "<group>";
@@ -177,7 +181,8 @@
 			children = (
 				AC646B7A293FB6F50036EBA0 /* TransactionsView.swift */,
 				AC646BA62940C3F80036EBA0 /* TransactionsInteractor.swift */,
-				AC646BA8294103D60036EBA0 /* TransactionsUIModel.swift */,
+				AC646BA8294103D60036EBA0 /* TransactionsViewModel.swift */,
+				AC646BAF29420F320036EBA0 /* TransactionsViewConfigurator.swift */,
 			);
 			path = Transactions;
 			sourceTree = "<group>";
@@ -226,6 +231,7 @@
 			children = (
 				AC646BAB29414BAC0036EBA0 /* HeaderView.swift */,
 				AC646BAD2941DA790036EBA0 /* LoadingIndicator.swift */,
+				AC646BB229422DCD0036EBA0 /* ErrorView.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -340,15 +346,17 @@
 				AC646B85293FBEEE0036EBA0 /* Services.swift in Sources */,
 				AC646B5F293FB27C0036EBA0 /* ContentView.swift in Sources */,
 				AC646B89293FC0DD0036EBA0 /* CustomerDataRepository.swift in Sources */,
+				AC646BB329422DCD0036EBA0 /* ErrorView.swift in Sources */,
 				AC646B77293FB6130036EBA0 /* Navigation.swift in Sources */,
 				AC646B8F2940A5B30036EBA0 /* CardsDataModel.swift in Sources */,
-				AC646BA9294103D60036EBA0 /* TransactionsUIModel.swift in Sources */,
+				AC646BA9294103D60036EBA0 /* TransactionsViewModel.swift in Sources */,
 				AC646B942940B59C0036EBA0 /* MockedServices.swift in Sources */,
 				AC646B922940B5800036EBA0 /* Mockable.swift in Sources */,
 				AC646B82293FBB370036EBA0 /* TransacationDetailDataModel.swift in Sources */,
+				AC646BB029420F320036EBA0 /* TransactionsViewConfigurator.swift in Sources */,
 				AC646BA72940C3F80036EBA0 /* TransactionsInteractor.swift in Sources */,
 				AC646BAC29414BAC0036EBA0 /* HeaderView.swift in Sources */,
-				AC646B8D2940A3A70036EBA0 /* CustomerInfoUIModel.swift in Sources */,
+				AC646B8D2940A3A70036EBA0 /* CustomerInfoViewModel.swift in Sources */,
 				AC646B5D293FB27C0036EBA0 /* AccountAndTransactionsApp.swift in Sources */,
 				AC646B87293FBF9F0036EBA0 /* RequestError.swift in Sources */,
 				AC646B6F293FB2AD0036EBA0 /* Accounts.swift in Sources */,

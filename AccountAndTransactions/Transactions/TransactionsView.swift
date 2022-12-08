@@ -17,43 +17,55 @@ struct TransactionsView: View {
     
     var body: some View {
         ZStack {
-            if case .loading = transactionInteractor.viewState {
-                //Display loader
-            }
-            else if case .display = transactionInteractor.viewState {
+            switch transactionInteractor.viewState {
+            case .loading:
+                LoadingIndicator()
+            case .display:
                 VStack {
                     Text("Transactions")
                         .configureForHeaderText()
                         .frame(maxWidth: .infinity, alignment: .leading)
                     
-                    List(transactionInteractor.transactionsUIModelList, id: \.id) {
+                    List(transactionInteractor.transactionsViewModelList, id: \.id) {
                         transaction in
-                        HStack {
-                            VStack(alignment: .leading, spacing: 10){
-                                Text(transaction.title)
-                                    .font(Font.body)
-                                    .fontWeight(.semibold)
-                                Text(transaction.type)
-                                    .font(.caption)
-                            }
-                            .padding([.top, .bottom], 10)
-                            
-                            Spacer()
-                            
-                            VStack(alignment: .trailing, spacing: 10) {
-                                Text(transaction.amount)
-                                    .font(.body)
-                                    .fontWeight(.semibold)
-                                Text(transaction.date)
-                                    .font(.caption)
-                            }
-                            .padding([.top, .bottom], 10)
-                        }
+                        TransactionListItem(transactionsUIModel: transaction)
                     }
                 }
+            case .begin:
+                EmptyView()
+            case .error(let errorMessage):
+                ErrorView(errorMessage: errorMessage)
             }
         }.onAppear {
             transactionInteractor.viewDidLoad()
+        }
+    }
+}
+
+struct TransactionListItem: View {
+    let transactionsUIModel: TransactionsViewModel
+    
+    var body: some View {
+        HStack {
+            VStack(alignment: .leading, spacing: 10){
+                Text(transactionsUIModel.title)
+                    .font(Font.body)
+                    .fontWeight(.semibold)
+                Text(transactionsUIModel.type)
+                    .font(.caption)
+            }
+            .padding([.top, .bottom], 10)
+            
+            Spacer()
+            
+            VStack(alignment: .trailing, spacing: 10) {
+                Text(transactionsUIModel.amount)
+                    .font(.body)
+                    .fontWeight(.semibold)
+                Text(transactionsUIModel.date)
+                    .font(.caption)
+            }
+            .padding([.top, .bottom], 10)
         }
     }
 }

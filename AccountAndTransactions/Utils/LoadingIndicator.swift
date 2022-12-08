@@ -5,7 +5,6 @@
 //  Created by Rakshith on 12/8/22.
 //
 
-import Foundation
 import SwiftUI
 
 struct LoadingIndicator: View {

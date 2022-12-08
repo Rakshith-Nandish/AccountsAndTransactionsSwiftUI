@@ -25,25 +25,24 @@ struct AccountsView: View {
                     ZStack {
                         VStack {
                             
-                            AccountHeader(customerInfoUIModel: accountsInteractor.customerInfoUIModel,
+                            AccountHeader(customerInfoUIModel: accountsInteractor.customerInfoViewModel,
                                           parentSize: proxy.size)
                             
                             Text("Accounts")
                                 .configureForHeaderText()
                                 .frame(maxWidth: .infinity, alignment: .leading)
                             
-                            
                             AccountsListItem(
-                                accountsInfoUIModelList: accountsInteractor.customerInfoUIModel.accounts)
+                                accountsInfoUIModelList: accountsInteractor.customerInfoViewModel.accounts)
                                 .onAppear(perform: {
                                 UITableView.appearance().contentInset.top = -20
                             })
                         }
                     }
                 case .error(let error):
-                    AccountsErrorView(errorMessage: error)
+                    ErrorView(errorMessage: error)
                 case .begin:
-                    LoadingIndicator()
+                    EmptyView()
                 }
             }.navigationBarHidden(true)
         }
@@ -55,7 +54,7 @@ struct AccountsView: View {
 
 struct AccountsListItem: View {
     
-    let accountsInfoUIModelList: [AccountsUIModel]
+    let accountsInfoUIModelList: [AccountsViewModel]
     
     var body: some View {
         List(accountsInfoUIModelList, id: \.id) {
@@ -72,21 +71,11 @@ struct AccountsListItem: View {
     }
 }
 
-struct AccountsErrorView: View {
-    let errorMessage: String
-    var body: some View {
-        Text("Looks like something went wrong!!" + errorMessage)
-            .padding()
-            .background(Color.red)
-            .foregroundColor(Color.white)
-    }
-}
-
 struct AccountHeader: View {
     private let backgroundOne = Color(red: 46/255, green: 19/255, blue: 113/255)
     private let backgroundTwo = Color(red: 19/255, green: 11/255, blue: 43/255)
     
-    let customerInfoUIModel: CustomerInfoUIModel
+    let customerInfoUIModel: CustomerInfoViewModel
     let parentSize: CGSize
     
     var body: some View {

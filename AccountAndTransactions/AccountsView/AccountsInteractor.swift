@@ -17,8 +17,8 @@ enum AccountsViewState: Equatable {
 class AccountsInteractor: ObservableObject {
     
     @Published var viewState: AccountsViewState = .begin
-    //modify this
-    @Published var customerInfoUIModel: CustomerInfoUIModel!
+    
+    var customerInfoViewModel: CustomerInfoViewModel!
     
     var getCustomerInfoServicable: CustomerInformationServicable
     
@@ -48,7 +48,7 @@ class AccountsInteractor: ObservableObject {
     func configureCustomerInfoPresentationModel(customerInfoModel: CustomerDataModel) {
         print(customerInfoModel)
         let accountsUIModelList = customerInfoModel.accounts.map {
-            AccountsUIModel(id: $0.sortingOrder,
+            AccountsViewModel(id: $0.sortingOrder,
                             uniqueID: $0.uniqueID,
                             accountName: $0.accountName,
                             numberOfCards: $0.cards.count)
@@ -58,7 +58,7 @@ class AccountsInteractor: ObservableObject {
         
         let numberOfAccountsText = "Number of Accounts: " + String(accountsUIModelList.count)
         
-        customerInfoUIModel = CustomerInfoUIModel(
+        customerInfoViewModel = CustomerInfoViewModel(
             customerName: customerWelcomeText,
             numberOfAccounts: numberOfAccountsText,
             accounts: accountsUIModelList)

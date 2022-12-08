@@ -30,7 +30,6 @@ extension Mockable {
                 return decodedResponse
             }
         } catch {
-            return nil
             fatalError("Failed to decode loaded JSON")
         }
         return nil

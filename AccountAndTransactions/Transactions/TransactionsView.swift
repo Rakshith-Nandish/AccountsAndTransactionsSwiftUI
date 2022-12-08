@@ -18,8 +18,10 @@ struct TransactionsView: View {
     var body: some View {
         ZStack {
             switch transactionInteractor.viewState {
+                
             case .loading:
                 LoadingIndicator()
+                
             case .display:
                 VStack {
                     Text("Transactions")
@@ -33,6 +35,7 @@ struct TransactionsView: View {
                 }
             case .begin:
                 EmptyView()
+                
             case .error(let errorMessage):
                 ErrorView(errorMessage: errorMessage)
             }
@@ -49,8 +52,8 @@ struct TransactionListItem: View {
         HStack {
             VStack(alignment: .leading, spacing: 10){
                 Text(transactionsUIModel.title)
-                    .font(Font.body)
-                    .fontWeight(.semibold)
+                    .configureBodyFontAndBold()
+                
                 Text(transactionsUIModel.type)
                     .font(.caption)
             }
@@ -60,8 +63,8 @@ struct TransactionListItem: View {
             
             VStack(alignment: .trailing, spacing: 10) {
                 Text(transactionsUIModel.amount)
-                    .font(.body)
-                    .fontWeight(.semibold)
+                    .configureBodyFontAndBold()
+                
                 Text(transactionsUIModel.date)
                     .font(.caption)
             }

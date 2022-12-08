@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		AC646B5D293FB27C0036EBA0 /* AccountAndTransactionsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC646B5C293FB27C0036EBA0 /* AccountAndTransactionsApp.swift */; };
-		AC646B5F293FB27C0036EBA0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC646B5E293FB27C0036EBA0 /* ContentView.swift */; };
 		AC646B61293FB2810036EBA0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC646B60293FB2810036EBA0 /* Assets.xcassets */; };
 		AC646B64293FB2810036EBA0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC646B63293FB2810036EBA0 /* Preview Assets.xcassets */; };
 		AC646B6E293FB2AD0036EBA0 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = AC646B6B293FB2AC0036EBA0 /* README.md */; };
@@ -52,7 +51,6 @@
 /* Begin PBXFileReference section */
 		AC646B59293FB27C0036EBA0 /* AccountAndTransactions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AccountAndTransactions.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC646B5C293FB27C0036EBA0 /* AccountAndTransactionsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountAndTransactionsApp.swift; sourceTree = "<group>"; };
-		AC646B5E293FB27C0036EBA0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		AC646B60293FB2810036EBA0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC646B63293FB2810036EBA0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AC646B6B293FB2AC0036EBA0 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -132,7 +130,6 @@
 				AC646B78293FB62F0036EBA0 /* Navigation */,
 				AC646B71293FB5D50036EBA0 /* AccountsView */,
 				AC646B5C293FB27C0036EBA0 /* AccountAndTransactionsApp.swift */,
-				AC646B5E293FB27C0036EBA0 /* ContentView.swift */,
 				AC646B60293FB2810036EBA0 /* Assets.xcassets */,
 				AC646B62293FB2810036EBA0 /* Preview Content */,
 			);
@@ -344,7 +341,6 @@
 				AC646B80293FB9E20036EBA0 /* AccountDetailDataModel.swift in Sources */,
 				AC646B73293FB5EA0036EBA0 /* AccountsView.swift in Sources */,
 				AC646B85293FBEEE0036EBA0 /* Services.swift in Sources */,
-				AC646B5F293FB27C0036EBA0 /* ContentView.swift in Sources */,
 				AC646B89293FC0DD0036EBA0 /* CustomerDataRepository.swift in Sources */,
 				AC646BB329422DCD0036EBA0 /* ErrorView.swift in Sources */,
 				AC646B77293FB6130036EBA0 /* Navigation.swift in Sources */,

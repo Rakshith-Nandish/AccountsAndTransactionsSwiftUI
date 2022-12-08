@@ -23,4 +23,9 @@ extension Text {
             .modifier(HeaderView())
             .padding(.leading,10)
     }
+    
+    func configureBodyFontAndBold() -> some View {
+        self.font(.body)
+            .fontWeight(.semibold)
+    }
 }

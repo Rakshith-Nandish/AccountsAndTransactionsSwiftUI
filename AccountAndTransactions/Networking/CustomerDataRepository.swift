@@ -45,7 +45,7 @@ class CustomerDataRepositoryImplementation: CustomerDataRepository {
             
             if let decodedResponse = try? JSONDecoder().decode(CustomerDataModel.self, from: data) {
                 //Ideally we would have an end point which returns transations for a particular account
-                // This logic would not be required in this case.
+                // This logic would not be required in this case. This is only for demo purpose
                 let accounts = decodedResponse.accounts.filter {
                     $0.uniqueID == accountId
                 }

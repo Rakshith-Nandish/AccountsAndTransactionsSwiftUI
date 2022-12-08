@@ -33,6 +33,8 @@
 		AC646BA52940B7DE0036EBA0 /* AccountsInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC646BA42940B7DE0036EBA0 /* AccountsInteractorTests.swift */; };
 		AC646BA72940C3F80036EBA0 /* TransactionsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC646BA62940C3F80036EBA0 /* TransactionsInteractor.swift */; };
 		AC646BA9294103D60036EBA0 /* TransactionsUIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC646BA8294103D60036EBA0 /* TransactionsUIModel.swift */; };
+		AC646BAC29414BAC0036EBA0 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC646BAB29414BAC0036EBA0 /* HeaderView.swift */; };
+		AC646BAE2941DA790036EBA0 /* LoadingIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC646BAD2941DA790036EBA0 /* LoadingIndicator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +76,8 @@
 		AC646BA42940B7DE0036EBA0 /* AccountsInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsInteractorTests.swift; sourceTree = "<group>"; };
 		AC646BA62940C3F80036EBA0 /* TransactionsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsInteractor.swift; sourceTree = "<group>"; };
 		AC646BA8294103D60036EBA0 /* TransactionsUIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsUIModel.swift; sourceTree = "<group>"; };
+		AC646BAB29414BAC0036EBA0 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		AC646BAD2941DA790036EBA0 /* LoadingIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingIndicator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +120,7 @@
 		AC646B5B293FB27C0036EBA0 /* AccountAndTransactions */ = {
 			isa = PBXGroup;
 			children = (
+				AC646BAA29414B8B0036EBA0 /* Utils */,
 				AC646B902940B5400036EBA0 /* Mocks */,
 				AC646B83293FBEDB0036EBA0 /* Networking */,
 				AC646B7C293FB7C40036EBA0 /* Data */,
@@ -214,6 +219,15 @@
 				AC646BA42940B7DE0036EBA0 /* AccountsInteractorTests.swift */,
 			);
 			path = AccountAndTransactionsTests;
+			sourceTree = "<group>";
+		};
+		AC646BAA29414B8B0036EBA0 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				AC646BAB29414BAC0036EBA0 /* HeaderView.swift */,
+				AC646BAD2941DA790036EBA0 /* LoadingIndicator.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -319,6 +333,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC646BAE2941DA790036EBA0 /* LoadingIndicator.swift in Sources */,
 				AC646B75293FB6020036EBA0 /* AccountsInteractor.swift in Sources */,
 				AC646B80293FB9E20036EBA0 /* AccountDetailDataModel.swift in Sources */,
 				AC646B73293FB5EA0036EBA0 /* AccountsView.swift in Sources */,
@@ -332,6 +347,7 @@
 				AC646B922940B5800036EBA0 /* Mockable.swift in Sources */,
 				AC646B82293FBB370036EBA0 /* TransacationDetailDataModel.swift in Sources */,
 				AC646BA72940C3F80036EBA0 /* TransactionsInteractor.swift in Sources */,
+				AC646BAC29414BAC0036EBA0 /* HeaderView.swift in Sources */,
 				AC646B8D2940A3A70036EBA0 /* CustomerInfoUIModel.swift in Sources */,
 				AC646B5D293FB27C0036EBA0 /* AccountAndTransactionsApp.swift in Sources */,
 				AC646B87293FBF9F0036EBA0 /* RequestError.swift in Sources */,

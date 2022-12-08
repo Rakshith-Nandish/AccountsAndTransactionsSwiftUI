@@ -23,10 +23,7 @@ struct TransactionsView: View {
             else if case .display = transactionInteractor.viewState {
                 VStack {
                     Text("Transactions")
-                        .font(.title)
-                        .fontWeight(.bold)
-                        .foregroundColor(.black)
-                        .padding(.leading, 12)
+                        .configureForHeaderText()
                         .frame(maxWidth: .infinity, alignment: .leading)
                     
                     List(transactionInteractor.transactionsUIModelList, id: \.id) {

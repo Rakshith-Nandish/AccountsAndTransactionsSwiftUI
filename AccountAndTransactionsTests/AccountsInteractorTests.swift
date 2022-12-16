@@ -24,12 +24,12 @@ class AccountsInteractorTests: XCTestCase {
     func testDidFetchCustomerInformation() async throws {
         await accountsInteractor.fetchCustomerDetails()
         XCTAssertTrue(accountsInteractor.viewState == .display)
-        XCTAssertTrue(!accountsInteractor.customerInfoUIModel.accounts.isEmpty)
+        XCTAssertTrue(!accountsInteractor.customerInfoViewModel.accounts.isEmpty)
     }
     
     func testDidConfigureAccountInformation() async throws {
         await accountsInteractor.fetchCustomerDetails()
-        let accountInfoUIModel = accountsInteractor.customerInfoUIModel.accounts
+        let accountInfoUIModel = accountsInteractor.customerInfoViewModel.accounts
         XCTAssertEqual(accountInfoUIModel.count, 1)
     }
     
